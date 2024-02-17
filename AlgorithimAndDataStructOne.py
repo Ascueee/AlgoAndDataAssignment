@@ -1,5 +1,4 @@
 import array
-import time
 
 #initializing arrays for data sorting
 startTime = time.time()
@@ -227,7 +226,7 @@ def Search():
             print("Could not find the item you're looking for")
 
 
-#
+#Uses the binary search algorithim to find certain elements in a sorted array
 def BinarySearch(searchArr, itemToSearch):
     startSearch = 0
     endOfSearch = len(searchArr) - 1
@@ -261,6 +260,7 @@ def main():
             for value in lines:
                 storeData(value)
 
+    #program while loop
     while(inProgram):
         userInput = UserInput()
 
